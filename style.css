@@ -1,0 +1,485 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: hsl(46, 49%, 85%);
+}
+
+.container {
+  background-color: hsl(46, 49%, 85%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.luke {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  margin-right: 100px;
+}
+
+.caixa1 {
+  background-color: hsl(56, 48%, 71%);
+  height: 48px;
+  width: 200px;
+}
+
+.caixa2 {
+  background-color: hsl(44, 82%, 80%);
+  width: 200px;
+  height: 140px;
+}
+
+.caixa3 {
+  background-color: hsl(50, 57%, 79%);
+  width: 200px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+.caixa3::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  background-color: hsl(48, 45%, 72%);
+  height: 13px;
+  width: 200px;
+  bottom: 69px;
+  right: 11px;
+  transform: rotate(-59deg);
+}
+
+.caixa3::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  background-color: hsl(48, 45%, 72%);
+  height: 13px;
+  width: 73px;
+  bottom: 115px;
+  right: 86px;
+  transform: rotate(59deg);
+}
+
+.cinto {
+  background-color: #381f10;
+  width: 200px;
+  height: 43px;
+  position: absolute;
+  z-index: 2;
+  bottom: 74px;
+}
+
+.cinto::before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  height: 33px;
+  width: 45px;
+  background-color: #dddddd;
+  right: 55px;
+  border: 5px solid #cecece;
+}
+
+.cinto::after {
+  content: '';
+  position: absolute;
+  height: 70px;
+  width: 45px;
+  top: -15px;
+  left: 25px;
+  background-color: #281509;
+}
+
+.bolsa {
+  width: 45px;
+  height: 34px;
+  background-color: #1d0e0b;
+  position: absolute;
+  top: 246px;
+  left: 25px;
+  z-index: 4;
+}
+
+.bolsa::before {
+  content: '';
+  position: absolute;
+  z-index: 5;
+  width: 10px;
+  height: 17px;
+  background-color: #cecece;
+  top: 24px;
+  left: 18px;
+}
+
+.caixa4 {
+  background-color: #e9df93;
+  height: 43px;
+  width: 200px;
+  position: relative;
+}
+
+.caixa4::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 43px;
+  background: #dacd80;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.caixa5 {
+  width: 200px;
+  height: 7px;
+  background-color: #492c17;
+}
+
+.pistola {
+  background: #b7b9ba;
+  width: 25px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px 5px 0 0;
+  padding-top: 2px;
+  position: absolute;
+  bottom: 26px;
+  right: -24px;
+}
+
+.pistola::before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 20px;
+  background: grey;
+  bottom: 24px;
+}
+
+.pistola::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 13px;
+  background: grey;
+  bottom: -13px;
+  left: 5px;
+  box-shadow: inset -10px 5px 7px #b7b9ba;
+}
+
+.line {
+  height: 30px;
+  width: 5px;
+  background: black;
+}
+
+.botao_pistola {
+  background: #dacd80;
+  height: 20px;
+  width: 3px;
+  position: absolute;
+  right: -27px;
+  bottom: 50px;
+}
+
+.botao_pistola::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #b7b9ba;
+  bottom: -17px;
+  left: -3px;
+}
+
+.robo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.cabeca {
+  border-bottom: 100px solid #dddddd;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  width: 200px;
+  position: relative;
+}
+
+.cabeca_line {
+  background: rgb(29, 41, 130);
+  height: 5px;
+  width: 150px;
+  position: absolute;
+  bottom: -6px;
+}
+
+.cabeca::before {
+  content: '';
+  width: 60px;
+  height: 50px;
+  background: rgb(29, 41, 130);
+  position: absolute;
+  bottom: -80px;
+  left: 41px;
+}
+
+.cabeca::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background: black;
+  position: absolute;
+  bottom: -70px;
+  left: 56px;
+}
+
+.parte1 {
+  width: 137px;
+  height: 15px;
+  background: rgb(29, 41, 130);
+  position: absolute;
+  top: 85px;
+  right: 37px;
+}
+
+.parte1::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: red;
+  position: absolute;
+  bottom: 4px;
+  left: 126px;
+}
+
+.parte2 {
+  width: 29px;
+  height: 15px;
+  background: rgb(29, 41, 130);
+  position: absolute;
+  top: 85px;
+  right: -23px;
+}
+
+.parte2::after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: black;
+  position: absolute;
+  right: 37px;
+}
+
+.listras {
+  width: 200px;
+  height: 80px;
+  background-color: rgb(234, 234, 235);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.listras1 {
+  width: 100px;
+  height: 10px;
+  background: rgb(29, 41, 130);
+}
+
+.listras1:first-child {
+  margin-top: 10px;
+}
+
+.listras1:last-child {
+  margin-bottom: 10px;
+}
+
+.corpo {
+  height: calc(160px - 80px);
+  width: 200px;
+  background-color: rgb(234, 234, 235);
+}
+
+.quadrado {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 34px;
+  height: 80px;
+  background: rgb(29, 41, 130);
+  margin: 0 auto;
+}
+
+.preto {
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  margin: 0 auto;
+}
+
+.outros_quadrados {
+  height: 55px;
+  width: 200px;
+  background-color: rgb(234, 234, 235);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quadrados_corpo:first-child {
+  height: 60px;
+  width: 30px;
+  background: rgb(29, 41, 130);
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.quadrados_corpo:nth-child(2) {
+  height: 30px;
+  width: 30px;
+  background: rgb(29, 41, 130);
+  margin-right: 13px;
+}
+
+.quadrados_corpo:last-child {
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  margin-right: 5px;
+  margin-top: 20px;
+}
+
+.pe {
+  border-bottom: 18px solid #dddddd;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  width: 200px;
+  transform: rotate(180deg);
+  position: relative;
+}
+
+.pe::before {
+  content: '';
+  width: 50px;
+  height: 15px;
+  background: rgb(224, 224, 225);
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+}
+
+.pe::after {
+  content: '';
+  width: 50px;
+  height: 15px;
+  border-bottom: 18px solid rgb(204, 202, 194);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  width: 50px;
+  transform: rotate(180deg);
+  position: absolute;
+  right: 39px;
+  bottom: 0;
+}
+
+.bracos {
+  /* width: 50px; */
+  height: 239px;
+  /* border-bottom: 153px solid rgb(204,202,194); */
+  /* border-left: 10px solid transparent; */
+  /* border-right: 10px solid transparent; */
+  width: 46px;
+  position: absolute;
+  background: #dddddd;
+  top: 100px;
+  left: -46px;
+}
+
+.bracos::after {
+  content: '';
+  width: 50px;
+  height: 15px;
+  border-bottom: 18px solid hsl(46, 49%, 85%);
+  border-left: 10px solid transparent;
+  /* border-right: 10px solid transparent; */
+  width: 45px;
+  position: absolute;
+  right: -2px;
+  bottom: 220px;
+  transform: rotate(145deg);
+}
+
+.bracos::before {
+  content: '';
+  width: 50px;
+  height: 15px;
+  border-bottom: 18px solid rgb(204, 202, 194);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  width: 45px;
+  position: absolute;
+  right: -10px;
+  bottom: -18px;
+}
+
+.braco {
+  width: 50px;
+  height: 239px;
+  width: 46px;
+  position: absolute;
+  background: #dddddd;
+  top: 100px;
+  left: 200px;
+}
+
+.braco::after {
+  content: '';
+  width: 50px;
+  height: 15px;
+  border-bottom: 18px solid hsl(46, 49%, 85%);
+  border-left: 10px solid transparent;
+  /* border-right: 10px solid transparent; */
+  width: 45px;
+  position: absolute;
+  right: -28px;
+  bottom: 220px;
+  transform: rotate(42deg);
+}
+
+.braco::before {
+  content: '';
+  width: 50px;
+  height: 15px;
+  border-bottom: 18px solid rgb(204, 202, 194);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  width: 45px;
+  position: absolute;
+  right: -10px;
+  bottom: -18px;
+}
+
+p {
+  font-size: 18px;
+  background-color: hsl(46, 49%, 85%);
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
